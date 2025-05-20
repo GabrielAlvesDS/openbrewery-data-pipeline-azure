@@ -46,32 +46,6 @@ Abaixo, imagens que mostram as etapas práticas de construção do projeto:
 
 ---
 
-## 🗂️ Estrutura do Repositório
-
-
-```text
-openbrewery-data-pipeline/
-│
-├── notebooks/                      # Notebooks PySpark no Databricks
-│   ├── brewery_bronze.py          # Criação da camada Bronze (Delta Table)
-│   ├── brewery_silver.py          # Transformações e comentários na camada Silver
-│   └── brewery_gold.py            # Agregações e tabelas analíticas na camada Gold
-│
-├── adf/                           # Infraestrutura do Azure Data Factory (ADF)
-│   ├── datasets/                  # Datasets usados no ADF (JSON)
-│   ├── linkedServices/            # Conexões com ADLS, API e Key Vault
-│   ├── pipelines/                 # Pipeline "Ingest_Brewery_API_to_Bronze"
-│   ├── triggers/                  # Trigger semanal agendada
-│   ├── factory/                   # Metadados da instância do ADF
-│   └── publish_config.json        # Configuração de publicação do ADF
-│
-├── docs/                          # Documentação do projeto
-│   └── passo_a_passo.pdf          # Documento completo do passo a passo
-│
-└── README.md                      # Instruções e apresentação do projeto
-```
-
-
 ## 🔄 Pipeline em Camadas
 
 ### **📥 Landing Zone**
