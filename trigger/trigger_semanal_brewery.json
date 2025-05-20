@@ -6,7 +6,7 @@
 			"semanal",
 			"brewery"
 		],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
