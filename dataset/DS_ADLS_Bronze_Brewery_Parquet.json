@@ -1,0 +1,25 @@
+{
+	"name": "DS_ADLS_Bronze_Brewery_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_BreweryDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "brewery_raw_@{formatDateTime(utcNow(), 'yyyyMMddHHmmss')}.parquet",
+					"type": "Expression"
+				},
+				"folderPath": "bronze",
+				"fileSystem": "brewery-project"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

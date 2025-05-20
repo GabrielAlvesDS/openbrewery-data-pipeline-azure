@@ -1,0 +1,19 @@
+{
+	"name": "LS_ADLS_BreweryDL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://stbrewerydatalake.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "KeyVault_Brewery",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "storage-access-key"
+			}
+		}
+	}
+}

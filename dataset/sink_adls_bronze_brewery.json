@@ -1,0 +1,24 @@
+{
+	"name": "sink_adls_bronze_brewery",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_BreweryDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "brewery_raw.json",
+					"type": "Expression"
+				},
+				"folderPath": "0.landing_zone",
+				"fileSystem": "brewery-project"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

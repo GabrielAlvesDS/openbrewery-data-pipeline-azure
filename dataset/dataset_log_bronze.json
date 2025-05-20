@@ -1,0 +1,24 @@
+{
+	"name": "dataset_log_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_BreweryDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "log_@{formatDateTime(utcNow(), 'yyyyMMddHHmmss')}.json",
+					"type": "Expression"
+				},
+				"folderPath": "bronze/logs",
+				"fileSystem": "brewery-project"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

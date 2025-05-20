@@ -1,0 +1,19 @@
+{
+	"name": "source_http_openbrewery_breweries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_OpenBreweryAPI",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/v1/breweries\t"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

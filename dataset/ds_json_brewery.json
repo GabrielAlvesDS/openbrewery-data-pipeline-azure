@@ -1,0 +1,20 @@
+{
+	"name": "ds_json_brewery",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_BreweryDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "brewery_raw",
+				"folderPath": "0.landing_zone ",
+				"fileSystem": "brewery-project"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

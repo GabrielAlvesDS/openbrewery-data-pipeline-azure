@@ -1,0 +1,14 @@
+{
+	"name": "adf-brewery-pipeline",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f9bf4c98-83da-4eb5-87ca-e2a3cb417572",
+		"tenantId": "bdfb19f3-9c9e-4b63-a45e-ce221a5ad608"
+	}
+}
