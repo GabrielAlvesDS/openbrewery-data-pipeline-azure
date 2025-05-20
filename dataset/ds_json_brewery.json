@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "brewery_raw",
-				"folderPath": "0.landing_zone ",
+				"fileName": "brewery_raw.json",
+				"folderPath": "0.landing_zone",
 				"fileSystem": "brewery-project"
 			}
 		}
